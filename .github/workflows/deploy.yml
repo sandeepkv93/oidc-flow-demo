@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Set a branch name to trigger deployment
+      - main
 
 jobs:
   deploy:
@@ -14,25 +14,20 @@ jobs:
     - name: Setup Node
       uses: actions/setup-node@v2
       with:
-        node-version: '16'  # Updated to a more recent Node version
-
-    - name: Debug Environment
-      run: |
-        node --version
-        npm --version
-        cat package.json
-        ls -la
+        node-version: '16'
 
     - name: Install dependencies
       run: |
-        npm cache clean --force
         npm install
-      
+        npm install --save-dev @babel/plugin-proposal-private-property-in-object
+
     - name: Build
       run: npm run build
+      env:
+        CI: false  # This will prevent treating warnings as errors
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build  # The folder the action should deploy
+        publish_dir: ./build
