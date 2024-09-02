@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkoidc_flow_demo=self.webpackChunkoidc_flow_demo||[]).push([[71],{6071:(e,c,o)=>{o.d(c,{createArchitectureServices:()=>r.S});var r=o(6677);o(6660)}}]);
