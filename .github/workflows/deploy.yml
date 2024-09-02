@@ -14,11 +14,20 @@ jobs:
     - name: Setup Node
       uses: actions/setup-node@v2
       with:
-        node-version: '14'  # You can specify the Node.js version you prefer
+        node-version: '16'  # Updated to a more recent Node version
+
+    - name: Debug Environment
+      run: |
+        node --version
+        npm --version
+        cat package.json
+        ls -la
 
     - name: Install dependencies
-      run: npm ci
-
+      run: |
+        npm cache clean --force
+        npm install
+      
     - name: Build
       run: npm run build
 
