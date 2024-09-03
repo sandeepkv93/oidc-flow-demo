@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/oidc-flow-demo/static/css/main.096bbdeb.css",
-    "main.js": "/oidc-flow-demo/static/js/main.ff7a4f8f.js",
+    "main.css": "/oidc-flow-demo/static/css/main.1bfd387b.css",
+    "main.js": "/oidc-flow-demo/static/js/main.2aa8d3b3.js",
     "static/js/412.fe90385e.chunk.js": "/oidc-flow-demo/static/js/412.fe90385e.chunk.js",
     "static/js/634.f41708a2.chunk.js": "/oidc-flow-demo/static/js/634.f41708a2.chunk.js",
     "static/js/628.4fab16ae.chunk.js": "/oidc-flow-demo/static/js/628.4fab16ae.chunk.js",
@@ -40,8 +40,8 @@
     "static/js/673.d816692c.chunk.js": "/oidc-flow-demo/static/js/673.d816692c.chunk.js",
     "static/js/648.c6e142b8.chunk.js": "/oidc-flow-demo/static/js/648.c6e142b8.chunk.js",
     "index.html": "/oidc-flow-demo/index.html",
-    "main.096bbdeb.css.map": "/oidc-flow-demo/static/css/main.096bbdeb.css.map",
-    "main.ff7a4f8f.js.map": "/oidc-flow-demo/static/js/main.ff7a4f8f.js.map",
+    "main.1bfd387b.css.map": "/oidc-flow-demo/static/css/main.1bfd387b.css.map",
+    "main.2aa8d3b3.js.map": "/oidc-flow-demo/static/js/main.2aa8d3b3.js.map",
     "412.fe90385e.chunk.js.map": "/oidc-flow-demo/static/js/412.fe90385e.chunk.js.map",
     "634.f41708a2.chunk.js.map": "/oidc-flow-demo/static/js/634.f41708a2.chunk.js.map",
     "628.4fab16ae.chunk.js.map": "/oidc-flow-demo/static/js/628.4fab16ae.chunk.js.map",
@@ -76,7 +76,7 @@
     "648.c6e142b8.chunk.js.map": "/oidc-flow-demo/static/js/648.c6e142b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.096bbdeb.css",
-    "static/js/main.ff7a4f8f.js"
+    "static/css/main.1bfd387b.css",
+    "static/js/main.2aa8d3b3.js"
   ]
 }
