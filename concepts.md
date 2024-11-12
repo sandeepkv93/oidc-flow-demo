@@ -181,9 +181,9 @@ sequenceDiagram
   CB->>User: Displays calendar data
 ```
 
-# Security Considerations 🛡️
+## Security Considerations 🛡️
 
-## 1. State Parameter & CSRF Protection 🔒
+### 1. State Parameter & CSRF Protection 🔒
 
 The `state` parameter serves as a crucial security measure against CSRF attacks. It should be cryptographically secure and unique per request:
 
@@ -214,7 +214,7 @@ class AuthStateManager {
 }
 ```
 
-## 2. PKCE Implementation 📱
+### 2. PKCE Implementation 📱
 
 PKCE is mandatory for public clients and recommended for all OAuth2 flows:
 
@@ -249,7 +249,7 @@ async function generatePKCE(): Promise<PKCEParams> {
 }
 ```
 
-## 3. Token Storage Strategy 🔐
+### 3. Token Storage Strategy 🔐
 
 Define clear interfaces and implement secure storage patterns:
 
@@ -282,7 +282,7 @@ class TokenStorage {
 }
 ```
 
-## 4. HTTPS Configuration 🌐
+### 4. HTTPS Configuration 🌐
 
 Example using Express with TypeScript:
 
@@ -320,7 +320,7 @@ class SecurityMiddleware {
 }
 ```
 
-## 5. Scope Management 📋
+### 5. Scope Management 📋
 
 Implement structured scope handling:
 
@@ -360,9 +360,9 @@ class ScopeManager {
 }
 ```
 
-# Best Practices 💡
+## Best Practices 💡
 
-## 1. ID Token Validation ✅
+### 1. ID Token Validation ✅
 
 Implement comprehensive token validation:
 
@@ -410,7 +410,7 @@ class TokenValidator {
 }
 ```
 
-## 2. Refresh Token Handling 🔄
+### 2. Refresh Token Handling 🔄
 
 Implement proactive token refresh:
 
@@ -449,7 +449,7 @@ class TokenRefresher {
 }
 ```
 
-## 3. Error Handling ⚠️
+### 3. Error Handling ⚠️
 
 Create a structured error handling system:
 
@@ -492,7 +492,7 @@ class OAuthErrorHandler {
 }
 ```
 
-## 4. Token Expiration Management ⏰
+### 4. Token Expiration Management ⏰
 
 Implement a token monitoring system:
 
@@ -525,7 +525,7 @@ class TokenMonitor {
 }
 ```
 
-## 5. Secure Logout Process 🚪
+### 5. Secure Logout Process 🚪
 
 Implement a comprehensive logout:
 
