@@ -7,9 +7,11 @@ Let's explore these protocols through a practical example: a calendar applicatio
 
 ## What is OAuth 2.0 and OIDC? 🤔
 
-**OAuth 2.0** is an authorization framework that enables applications to obtain limited access to user accounts on other services. It provides delegated authorization, allowing users to grant third-party applications access to their resources without sharing passwords.
+**OAuth 2.0** is an industry-standard authorization framework that enables applications to obtain limited access to user accounts on other services. Think of it as a secure valet key for your car — it provides restricted access without handing over the master key. It provides delegated authorization, allowing users to grant third-party applications access to their resources without sharing passwords. For example, when you click “Sign in with Google” to access a service, OAuth 2.0 lets that service access specific parts of your Google account without ever seeing your Google password.
 
-**OpenID Connect (OIDC)** is built on top of OAuth 2.0, adding an identity layer that allows applications to verify user identities and obtain basic profile information.
+**OpenID Connect (OIDC)** is built on top of OAuth 2.0, adding an identity layer that allows applications to verify user identities and obtain basic profile information. While OAuth 2.0 handles the “can this app access this data?” question, OIDC handles the “who is this user?” question. It standardizes fields like name, email, and profile picture, making it easier for applications to handle user identity consistently. For instance, when you use your Google account to create a new account on a website, OIDC is what allows that website to receive your verified email address and name from Google.
+
+Together, these protocols form the backbone of modern secure authentication and authorization on the internet, enabling the seamless and secure sharing of information between services while protecting user privacy and security.
 
 ## Step-by-Step Flow: CalendarBuddy Integration 🚀
 
